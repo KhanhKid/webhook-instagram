@@ -1,5 +1,6 @@
 <?php
-if(isset($_POST)){
-    echo '<pre>',var_dump($_POST),'</pre>';die();
+if(isset($_GET)){
+    file_put_contents('myfile.json', json_encode($_GET));
 }
+
 ?>
